@@ -1,0 +1,633 @@
+:root {
+	--color-primary: #528f2d;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+body{
+	font-family: 'Anek Malayalam', sans-serif;
+	line-height: 1.5;
+}
+
+p{
+	
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.btn {
+	color: #fff;
+	background: var(--color-primary);
+	padding: 8px 15px;
+	border-radius: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 3s ease in;
+}
+.btn:hover {
+	background: #8dce64;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.section-header {
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+.section-text {
+	text-align: center;
+	color:  #8c8c8c;
+}
+
+header {
+	height: 80vh;
+	width: 100%;
+	background-image: url(../images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	position: relative;
+}
+.top-nav {
+	display: none;
+}
+.bottom-nav	{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: #fff;
+	overflow: none;
+}
+.bottom-nav .nav-brand {
+	padding: 0.8em;
+}
+.nav-links {
+	display: flex;
+	padding: 0.8em;
+	gap: 3em;
+}
+.nav-links li {
+	list-style-type: none;
+}
+.nav-links .link {
+	padding-top: 0.5em;
+}
+.nav-links .link:hover {
+	border-bottom: 4px dotted #fff;
+	cursor: pointer;
+}
+.nav-links .submit-link {
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	padding: 8px 15px;
+}
+.nav-links .submit-link:hover {
+	background: #fff;
+	color: #382d2c;
+	cursor: pointer;
+}
+.bottom-nav button {
+	display: none;
+}
+.bottom-nav button:hover {
+	background: #fff;
+	color: #382d2c;
+	cursor: pointer;
+}
+.hero-text {
+	position: absolute;
+	color: #fff;
+	top: 40%;
+	left: 10%;
+}
+.hero-text p {
+	padding-top: 0.5em;
+	padding-bottom: 0.8em;
+}
+.sm-active {
+	display: none;
+}
+.hero-form {
+	border: 1px solid #fff;
+	border-radius: 15px;
+	width: fit-content;
+}
+
+.hero-form input, .hero-form select {
+	background: transparent;
+	color: #fff;
+	padding: 0.5em 1.2em;
+}
+
+.hero-form input {
+	border-right: 1px solid #fff;
+}
+.hero-form button {
+	background: #fff;
+	padding: 0.5em;
+	border-radius: 0 15px 15px 0;
+}
+
+
+
+
+
+
+/* ------------  Recipe Grid Section  -------------- */
+
+
+.recipe-grid {
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+
+.grid-image__box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.grid-image__box .category-img {
+	width: 100%;
+	height: 300px;
+	border-radius: 8px;
+}
+
+
+/* ------------  Newsletter Section  -------------- */
+
+
+.newsletter {
+	height: 40vh;
+	width: 100%;
+	background: #000;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.newsletter-text {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: #fff;
+}
+.newsletter-img {
+	position: absolute;
+	height: 100%;
+	right: 0;
+
+}
+.newsletter-text h2, .newsletter-text p {
+	padding-bottom: 0.9em;
+}
+
+
+
+
+/* ------------  Popular Recipe Section  -------------- */
+
+.popular-recipe {
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+.recipe-img-box .recipe-img {
+	height: 200px;
+	width: 100%;
+	border-radius: 8px;
+	margin-bottom: 0.4em;
+}
+.recipe-img-box h4 {
+	margin-bottom: 0.4em;
+}
+.recipe-img-box p {
+	font-size: 0.8em;
+}
+
+
+
+
+/* ------------  Blog Section  -------------- */
+
+
+.blog {
+	background: #fafafa;
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+.blog-container{
+	display: flex;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	gap: 3em;
+}
+.blog-container .blog-aside{
+	flex-grow: 32%;
+	padding: 2em 10em 0 2em;
+}
+.blog-container .blog-grid{
+	flex-grow: 65%;
+}
+.blog-aside {
+	background: var(--color-primary);
+	border-radius: 5px;
+	color: #fff;
+}
+.blog-aside h3 {
+	margin-bottom: 1.5em;
+}
+.blog-aside .blog-category {
+	margin-bottom: 1.5em;
+}
+.blog-aside .blog-category h4 {
+	font-size: 0.95em;
+	cursor: pointer;
+}
+.blog-aside .blog-category p {
+	font-size: 0.85em;
+	cursor: pointer;
+}
+.blog-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap:  1.2em;
+}
+.blog-grid div {
+	padding-bottom: 0.6em;
+}
+.blog-grid img {
+	height: 200px;
+	width: 100%;
+	margin-bottom: 0.7em;
+	border-radius: 5px;
+}
+.blog-grid h4 {
+	padding-bottom: 0.75em;
+}
+.blog-grid p {
+	color: #8c8c8c;
+	font-size: 0.8em;
+	font-family: 'Poppins', sans-serif;
+}
+.blog-grid a {
+	color: var(--color-primary);
+	text-decoration: none;
+	cursor: pointer;
+}
+.blog-grid a:hover {
+	color: #66ff33;
+	font-weight: 500;
+}
+.blog-grid .blog-group {
+	font-weight: bold;
+}
+
+
+/* ------------  Cakes Section  -------------- */
+
+.cakes {
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+.cakes-container {
+	display: flex;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	gap: 3em;
+}
+.cakes .cakes-grid {
+	flex-grow: 65%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap:  3em;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+}
+.cakes .cakes-grid .cakes-card {
+	padding-bottom: 0.6em;
+}
+.cakes .cakes-grid .cakes-card img {
+	height: 200px;
+	width: 100%;
+	margin-bottom: 0.7em;
+	border-radius: 5px;
+}
+.cakes .cakes-grid .cakes-card span {
+	font-size: 0.8em;
+	margin-bottom: 0.7em;
+	color: #8c8c8c;
+	padding-right: 0.5em;
+}
+.cakes-container .social-links {
+	flex-grow: 32%;
+	text-align: center;
+	background: #ffcb2b;
+	width: 32%;
+	height: 300px;
+	margin-top: 1.5em;
+	padding: 1.5em;
+	border-radius: 5px;
+}
+.cakes-container .social-links h2 {
+	font-weight: 600;
+	font-size: 1.5em;
+	color: #fff;
+}
+.cakes-container .social-links .social-link {
+	background: #fff;
+	margin: 1em auto;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.social-link:first-child {
+	color: #8f72dd;
+}
+.social-link:nth-child(2) {
+	color: #86b1d9;
+}
+.social-link:nth-child(3) {
+	color: #ff3300;
+}
+.social-link:nth-child(4) {
+	color: #0066ff;
+}
+
+
+
+/* ------------  Main Course Section  -------------- */
+
+.main-course {
+	background: #fafafa;
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+.course-img-grid {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2em;
+}
+.course-img-grid .course-img {
+	height: 200px;
+	position: relative;
+}
+.course-img-grid div img{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+.course-img-grid .course-img a{
+	position: absolute;
+	bottom: 10%;	
+	left: 10%;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.full-width-img-grid {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.full-width-img-grid img {
+	width: 100%;
+	height: 200px;
+}
+
+
+
+
+/* ------------  Media Query -------------- */
+
+
+@media screen and (max-width: 1028px) {
+	h2 {
+		font-size: 2em;
+	}
+	p, li, a {
+		font-size: 1.2em;
+	}
+	.md-container {
+		width: 90%;
+		margin: auto;
+	}
+	.bottom-nav .nav-brand {
+		padding: 0.8em 0;
+	}
+	.top-nav {
+		display: flex;
+		justify-content: space-between;
+		color: #fff;
+		background: var(--color-primary);
+		padding: 1em 5%;
+	}
+	.bottom-nav {
+		width: 90%;
+		margin: auto;
+	}
+	.bottom-nav button {
+		display: inline-block;
+		height: 2em;
+		width: 2em;
+		padding-bottom: 0.1em;
+		margin-top: 0.5em;
+		border: 2px solid #fff;
+		border-radius: 0;
+		background: transparent;
+		color: #fff;
+		font-weight: 600;
+		font-size: 25px;
+		text-align: center;
+	}
+	#close-menu-btn {
+		display: none;
+	}
+	.nav-links {
+		display: none;
+		color: #fff;
+		position: fixed;
+		top: 7.7em;
+		right: 5%;
+		flex-direction: column;
+		height: fit-content;
+		width: 18em;
+		gap: 0;
+		z-index: 3;
+		padding: 0;
+	}
+	.nav-links li {
+		width: 100%;
+		height: 3em;
+		background: var(--color-primary);
+		box-shadow: -4em 6em 10em rgba(0, 0, 0, 0.6);
+		text-align: center;
+		font-size: 1.2em;
+	}
+	.nav-links li:hover {
+		background: #fff;
+		color: var(--color-primary);
+	}
+	.nav-links .icons-link, .nav-links .submit-link{
+		display: none;
+	}
+
+	/* ------------  Recipe Grid Section  -------------- */
+
+	.grid-image__box {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	/* ------------  Newsletter Section  -------------- */
+
+
+	.newsletter {
+		height: 40vh;
+		width: 100%;
+		background: url(../images/newsletter.jpg);
+	}
+
+	.newsletter-img {
+		display: none;
+	}
+
+	/* ------------  Blog Section  -------------- */
+
+
+
+	.blog-container .blog-aside{
+		display: none;
+		padding: 2em 10em 0 2em;
+	}
+	.blog-container .blog-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	/* ------------  Cakes Section  -------------- */
+
+	.cakes {
+		padding-top: 5em;
+		padding-bottom: 2em;
+	}
+	.cakes-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.cakes .cakes-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap:  3em;
+	}
+	.cakes-container .social-links {
+		width: 70%;
+		margin: auto;
+	}
+	/* ------------  Main Course Section  -------------- */
+
+
+.course-img-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+.full-width-img-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+}
+
+
+@media screen and (max-width: 420px) {
+	.sm-container {
+		margin: auto;
+		width: 92%;
+	}
+	.sm-active {
+		display: block;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	p, li, a {
+		font-size: 1em;
+	}
+	header {
+		height: 90vh;
+	}
+	.hero-text {
+		top: 30%
+	}
+	.hero-form{
+		display: none;
+	}
+	.hero-form-resp input {
+		background: transparent;
+		padding: 8px 15px;
+		width: 80%;
+		border-radius: 15px;
+		border: 1px solid #fff;
+	}
+	.hero-form-resp select {
+		background: transparent;
+		padding: 8px 15px;
+		width: 88%;
+		border-radius: 15px;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+	.hero-form-resp button {
+		background: #fff;
+		color: #000;
+		padding: 8px 15px;
+		width: 88%;
+		border-radius: 15px;
+		border: 1px solid #fff;
+	}
+	/* ------------  Recipe Grid Section  -------------- */
+
+	.grid-image__box {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	/* ------------  Blog Section  -------------- */
+
+
+
+	.blog-container .blog-aside{
+		display: none;
+		padding: 2em 10em 0 2em;
+	}
+	.blog-container .blog-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	/* ------------  Cakes Section  -------------- */
+	.cakes .cakes-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.cakes-container .social-links {
+		width: 80%;
+		margin: auto;
+	}
+		/* ------------  Main Course Section  -------------- */
+
+
+.course-img-grid {
+	grid-template-columns: repeat(1, 1fr);
+}
+.full-width-img-grid {
+	grid-template-columns: repeat(1, 1fr);
+}
+}
+
